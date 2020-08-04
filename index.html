@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@ body, html {
   src: url("fonts/leafy.woff") format('woff');
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -36,6 +37,11 @@ body, html {
 
 .bgimg-3 {
   background-image: url("cassette1.webp");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("commodore.jpg");
   min-height: 400px;
 }
 
@@ -82,7 +88,7 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
   }
 }
@@ -114,7 +120,7 @@ h3 {
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  <p>Move on down for the audibles.</p>
   </div>
 </div>
 
@@ -126,7 +132,22 @@ h3 {
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  <p>Keep going for web.</p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px; text-indent:5%; color: #f7f7f7;">WEB WORK</span>
+    <div class="right">
+    <a href="https://uniadmissions.co.uk">Site 1</a>
+    </div>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Next you can contact me.</p>
   </div>
 </div>
 
