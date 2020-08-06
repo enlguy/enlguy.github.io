@@ -3,6 +3,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript"> 
+        document.getElementById("contact").onclick = function(con) {
+            document.getElementById("contact").style.display = "none"; 
+        } 
+</script>
 <style>
 body, html {
   height: 100%;
@@ -18,13 +23,13 @@ body, html {
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
-  opacity: 0.65;
+  opacity: 0.55;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
 .bgimg-1 {
   background-image: url("build1.webp");
   min-height: 100%;
@@ -45,7 +50,42 @@ body, html {
   min-height: 400px;
 }
 
-.right {
+.visual {
+  text-align: right;
+  margin-right: 15%;
+  margin-bottom: 50%;
+  font-size: 20px;
+}
+
+a.visual {
+  color: #cdbde6;
+  text-align: right;
+  margin-right: 15%;
+  font-weight: 700;
+}
+
+.audio {
+  text-align: right;
+  margin-right: 15%;
+  margin-bottom: 50%;
+  font-size: 20px;
+}
+
+a.audio {
+  color: #cdbde6;
+  text-align: right;
+  margin-right: 15%;
+  font-weight: 700;
+}
+
+a.aweb {
+  color: #cdbde6;
+  text-align: right;
+  margin-right: 15%;
+  font-weight: 700;  
+}
+
+.web {
   text-align: right;
   margin-right: 15%;
   margin-bottom: 50%;
@@ -112,8 +152,8 @@ h3 {
 <div class="bgimg-2">
   <div class="caption">
   <span class="border" style="background-color:transparent;font-size:25px; text-indent:5%; color: #f7f7f7;">VISUAL</span>
-    <div class="right">
-    <a href="https://www.imdb.com/name/nm4821772/">Film Work</a>
+    <div class="visual">
+    <b><a href="https://www.imdb.com/name/nm4821772/" class="visual">Film Work</a></b>
     </div>
   </div>
 </div>
@@ -127,6 +167,9 @@ h3 {
 <div class="bgimg-3">
   <div class="caption">
   <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">AUDIO</span>
+  <div class="audio">
+    <b><a href="https://soundcloud.com/jack-epner">SoundCloud</a></b>
+    </div>
   </div>
 </div>
 
@@ -139,8 +182,11 @@ h3 {
 <div class="bgimg-4">
   <div class="caption">
   <span class="border" style="background-color:transparent;font-size:25px; text-indent:5%; color: #f7f7f7;">WEB WORK</span>
-    <div class="right">
-    <a href="https://uniadmissions.co.uk">Site 1</a>
+    <div class="web">
+    <b><a href="https://uniadmissions.co.uk" class="aweb">Site 1</a></b>
+    <p>
+      <b><a href="http://acehvacpro.com/" class="aweb">Site 2</a></b>
+    </p>
     </div>
   </div>
 </div>
@@ -154,7 +200,9 @@ h3 {
 <div class="bgimg-1">
   <div class="caption">
   <div class="contact">
-  <span class="border">CONTACT</span>
+  <span class="border">
+    <<a href="mailto:jak282323@gmail.com"><img src="contact1.png" /></a>
+  </span>
   </div>
 
   </div>
