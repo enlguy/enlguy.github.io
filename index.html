@@ -1,212 +1,248 @@
-
-<!DOCTYPE html>
+<DOCTYPE! html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript"> 
-        document.getElementById("contact").onclick = function(con) {
-            document.getElementById("contact").style.display = "none"; 
-        } 
-</script>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
+  <meta charset="utf-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <style>
 
-@font-face {
-  font-family: "leafy";
-  src: url("fonts/leafy.woff") format('woff');
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-  position: relative;
-  opacity: 0.55;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+#Menu {
+  background-image:url(https://i.imgur.com/CqrfmFa.jpg);
   background-size: cover;
+  height: 100vh;
 }
 
-.bgimg-1 {
-  background-image: url("build1.webp");
-  min-height: 100%;
+ .Menu-list {
+   font-size: 4.25rem;
+   line-height: 1.2;
+   text-transform: uppercase;
+   text-align: center;
+   padding-top: 70px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transform: rotateX(-10deg) rotateY(20deg);
 }
 
-.bgimg-2 {
-  background-image: url("camera1.webp");
-  min-height: 400px;
+ .Menu-list-item {
+   position: relative;
+   text-decoration: none;
+   color: #ff2c75;
+   cursor: pointer;
 }
 
-.bgimg-3 {
-  background-image: url("cassette1.webp");
-  min-height: 400px;
+a {
+  text-decoration: none;
 }
 
-.bgimg-4 {
-  background-image: url("commodore.jpg");
-  min-height: 400px;
+li {
+  list-style-type: none;
 }
 
-.visual {
-  text-align: right;
-  margin-right: 15%;
-  margin-bottom: 50%;
+#about {
+  font-family: Balsamiq, sans-serif;
   font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-indent: 20px;
+  line-height: 1.2em;
+  padding: 30px 60px;
 }
 
-a.visual {
-  color: #cdbde6;
-  text-align: right;
-  margin-right: 15%;
-  font-weight: 700;
+#baby {
+  grid-area: imgone;
 }
 
-.audio {
-  text-align: right;
-  margin-right: 15%;
-  margin-bottom: 50%;
-  font-size: 20px;
+.container__text {
+  grid-area: txt;
 }
 
-a.audio {
-  color: #cdbde6;
-  text-align: right;
-  margin-right: 15%;
-  font-weight: 700;
+#babycap {
+  grid-area: cptone
 }
 
-a.aweb {
-  color: #cdbde6;
-  text-align: right;
-  margin-right: 15%;
-  font-weight: 700;  
+#womancap {
+  grid-area: cpttwo
 }
 
-.web {
-  text-align: right;
-  margin-right: 15%;
-  margin-bottom: 50%;
-  font-size: 20px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: left;
-  text-indent: 10%;
-  color: #d10099;
-}
-
-.contact {
-  margin-bottom: 10%;
-
-}
-.caption span.border {
-  background-color: #111;
-  color: #d10099;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-.font {
-  font-family: leafy;
-  font-size: 40px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: scroll;
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: minmax(60px, auto);
+  grid-template-areas: 
+    "imgone txt"
+    "cptone txt"
+    "imgtwo txt"
+    "cpttwo txt"
+    "imgthree txt"
+    "cptthree txt";
   }
+
+.container__text {
+  padding-left: 20px;
+  text-align: center;
 }
-</style>
+
+.cap{
+  font-size: 12px;
+  font-family: Arial;
+}
+
+#work {
+  background-image:url("https://i.imgur.com/CwUN6yD.jpg");
+  background-size: cover;
+  padding: 57px 69px 50px 69px; overflow: hidden;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+  
+.portfolio-item {
+  width: 320px; 
+  padding: 4px; 
+  background: #eee; 
+  text-align: center;
+  float: left; 
+  margin: 0 7px 14px 7px;
+}
+
+p {
+    display: block;
+    width: 320px;
+    height: 15px;
+    padding: 7px 0 0 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+#contact {
+  text-align: center;
+}
+
+.coffee {
+  display: block;
+  font-size: 30px;
+    color: #6D2670;
+    font-family: 'Allura', cursive;
+    position: relative;
+    transform: rotate(-45deg);
+    left: 40%;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 1rem;
+}
+
+.contact-details {
+    font-size: 2rem;
+    transition: transform 0.3s ease-out;
+}
+
+  </style>
+
 </head>
+
 <body>
+  <section id="Menu" class ="page">
+      <ul class="Menu-list" data-offset="10">
+        <li class="Menu-list-item" data-offset="20">
+          Home
+        </li>
+          <a href="#about">
+        <li class="Menu-list-item" data-offset="16">
+          About
+        </li>
+        </a>
+        <a href="#work">
+        <li class="Menu-list-item" data-offset="12">
+          Work
+        </li>
+         </a>
+        <a href="#contact">
+        <li class="Menu-list-item" data-offset="8">
+          Contact
+        </li>
+        </a>
+        </ul>
+  </section>
 
-<div class="bgimg-1">
-  <div class="caption">
-  <div class="font">
-  <span class="border">I AM AN ARCHITECT</span>
+<section id="about" class="page">
+  <div class="container">
+    <img class="container__image" id="baby" src="https://i.imgur.com/dd5X9Qh.jpg">
+    <div class="cap" id="babycap">Me as a baby</div>
+    <img class="container__image" id="woman" src="https://i.imgur.com/BADZp6T.jpg">
+    <div class="cap" id="womancap">Me as an overstressed woman</div>
+    <img class="container__image" id="me" src="https://i.imgur.com/LU2ZTma.jpg">
+    <div class="cap" id="mecap">Me as a cartoon</div>
+  <div class="container__text">
+ I started making choose your own adventure games when I was 10 years old with BASIC and a lot of if-then-else staetments.  I guess I've come a long ways from there, but I still approach my work with a sense of wonder, adventure, and fun.  I am passionate about building beautiful pages that accomplish a purpose, whether it's helping you convert leads, better engage with an audience, or just share cool stuff.  My portfolio is only limited by my recent entry to this professional world, but I would love to work with you, and show you what I'm capable of.
   </div>
   </div>
-</div>
+</section>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: center; font-size:14px">
-  <h3 style="text-align:center;">Welcome to my art</h3>
-  <p>This is some shit I've made, sometimes with others, sometimes alone, but always with passion.</p>
-</div>
-
-<div class="bgimg-2">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px; text-indent:5%; color: #f7f7f7;">VISUAL</span>
-    <div class="visual">
-    <b><a href="https://www.imdb.com/name/nm4821772/" class="visual">Film Work</a></b>
+<section id="work" class="page">
+  <div class="projects-grid">
+  <div class="portfolio-item">
+    <a href="https://codepen.io/enlguy/full/PoNdwwz" target="_blank">
+    <img src="https://assets.codepen.io/4913065/internal/screenshots/pens/PoNdwwz.default.png?fit=cover&format=auto&ha=false&height=180&quality=75&v=2&version=1600287459&width=320" alt="project">
+    </a>
+    <p>Tribute Page (HTML, CSS)</p>
+  </div>
+  <div class="portfolio-item">
+    <a href="https://codepen.io/enlguy/full/rNeYWPB" target="_blank">
+        <img class="project-image" src="https://assets.codepen.io/4913065/internal/screenshots/pens/rNeYWPB.default.png?fit=cover&format=auto&ha=false&height=180&quality=75&v=2&version=1599226090&width=320" alt="project">
+        </a>
+        <p>Survey Form (HTML, CSS)</p>
     </div>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Move on down for the audibles.</p>
-  </div>
-</div>
-
-<div class="bgimg-3">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">AUDIO</span>
-  <div class="audio">
-    <b><a href="https://soundcloud.com/jack-epner">SoundCloud</a></b>
+    <div class="portfolio-item">
+        <a href="https://codepen.io/enlguy/full/dyMVrme" target="_blank">
+        <img class="project-image" src="https://assets.codepen.io/4913065/internal/screenshots/pens/dyMVrme.default.png?fit=cover&format=auto&ha=false&height=180&quality=75&v=2&version=1599226215&width=320" alt="project">
+      </a>
+      <p>Technical Documentation (HTML, CSS)</p>
     </div>
+    <div class="portfolio-item">
+      <a href="https://codepen.io/enlguy/full/WNwXdZG" target="_blank">
+    <img class="project-image" src="https://assets.codepen.io/4913065/internal/screenshots/pens/WNwXdZG.default.png?fit=cover&format=auto&ha=false&height=180&quality=75&v=2&version=1599325146&width=320"alt="project">
+    </a>
+    <p>Product Page (HTML, CSS)</p>
   </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Keep going for web.</p>
+  <div class="portfolio-item">
+    <a href="https://musicthingie.herokuapp.com" target="_blank">
+    <img class="project-image" src="https://i.imgur.com/gyzw5Qx.jpg"alt="project">
+    </a>
+    <p>Streaming Music Player (HTML, CSS, JS-Vue, node, deployed to Heroku)</p>
   </div>
-</div>
+  </div>
+</section>
 
-<div class="bgimg-4">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px; text-indent:5%; color: #f7f7f7;">WEB WORK</span>
-    <div class="web">
-    <b><a href="https://uniadmissions.co.uk" class="aweb">Site 1</a></b>
-    <p>
-      <b><a href="http://acehvacpro.com/" class="aweb">Site 2</a></b>
-    </p>
+<section id="contact">
+    <div class="contact-section-header">
+      <h2>Let's work together...</h2>
+      <p><span class="coffee">I'll buy coffee.</span></p>
     </div>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Next you can contact me.</p>
-  </div>
-</div>
-
-<div class="bgimg-1">
-  <div class="caption">
-  <div class="contact">
-  <span class="border">
-    <<a href="mailto:jak282323@gmail.com"><img src="contact1.png" /></a>
-  </span>
-  </div>
-
-  </div>
-</div>
-
+    <div class="contact-links">
+      <a id="profile-link" href="https://github.com/enlguy/enlguy.github.io" target="_blank" class="btn contact-details">
+        <i class="fab fa-github"></i>
+        Github
+      </a>
+      <a id="email-link" href="mailto:jack282323@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+    </div>
+  </section>
 </body>
 </html>
