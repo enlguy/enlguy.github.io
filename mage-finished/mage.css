@@ -1,0 +1,1012 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #121212;
+  max-width: 100%;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1140px) {
+  .container {
+    width: 85%;
+    max-width: 1440px;
+    padding: 0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+section {
+  margin-top: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+section.hidden {
+  display: none;
+}
+
+section.active {
+  display: block;
+  -webkit-animation: show 0.5s;
+          animation: show 0.5s;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+}
+
+input[type=text]:focus {
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+@font-face {
+  font-family: dubellay;
+  src: url("./fonts/mage fonts/dubellay.ttf");
+}
+
+@font-face {
+  font-family: dubellit;
+  src: url("./fonts/mage fonts/dubellit.ttf");
+}
+
+@font-face {
+  font-family: Magean;
+  src: url("./fonts/mage fonts/Magean.ttf");
+}
+
+@font-face {
+  font-family: magnav;
+  src: url("./fonts/mage fonts/magnav.ttf");
+}
+
+@font-face {
+  font-family: VTCGoblinHand;
+  src: url("./fonts/mage fonts/VTCGoblinHand.ttf");
+}
+
+@font-face {
+  font-family: VTCGoblinHand;
+  src: url("./fonts/mage fonts/VTCGoblinHandBold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: VTCGoblinHand;
+  src: url("./fonts/mage fonts/VTCGoblinHandItalic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: VTCGoblinHandSC;
+  src: url("./fonts/mage fonts/VTCGoblinHandSC.ttf");
+}
+
+@font-face {
+  font-family: ZapfinoLinotypeFour;
+  src: url("./fonts/mage fonts/Zapfino_Linotype_Four.ttf");
+}
+
+@font-face {
+  font-family: ZapfinoLinotypeTwo;
+  src: url("./fonts/mage fonts/Zapfino_Linotype_Two.ttf");
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.px-half {
+  padding: 0 0.5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.avoid-clicks {
+  pointer-events: none;
+}
+
+.max-w {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-float {
+  float: left;
+}
+
+.right-float {
+  float: right;
+}
+
+* {
+  font-family: VTCGoblinHand;
+}
+
+input[type="text"] {
+  font-family: VTCGoblinHand;
+}
+
+input.standalone {
+  margin: 0.5rem 0;
+}
+
+body {
+  background-image: url("./character-assets/Mage/mage-border.jpg");
+  background-size: cover;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-header img {
+  width: 33.3%;
+  padding-top: 0.5rem;
+}
+
+.basic-info {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.basic-info .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.basic-info .info-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1;
+  background: white;
+}
+
+.basic-info .info-section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0.3rem 0;
+}
+
+.basic-info .info-section div div {
+  font-family: VTCGoblinHand;
+}
+
+.tabs-nav {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  margin: 1rem 0px;
+}
+
+.tabs-nav li {
+  width: 100%;
+}
+
+.tabs-nav li a {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  border: solid 3px white;
+  background: white;
+}
+
+.tabs-nav li a:hover {
+  border: solid 3px gray;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.tabs-nav li a:focus {
+  border: solid 3px #004f6d;
+  outline: 0;
+}
+
+.tabs-nav .active {
+  border: solid 3px #004f6d;
+}
+
+.attribute-circles,
+attribute-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attribute-boxes input {
+  min-width: unset !important;
+  margin: 0 5px;
+}
+
+.attribute-circle,
+.box {
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  margin: 0 2px;
+}
+
+.circles-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.circles-boxes img {
+  margin: 2px;
+}
+
+.skills-card {
+  margin: 0 0.5rem;
+}
+
+.skills-card header {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills-card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills-card .card-body .rote-skill-label {
+  font-size: 0.75rem;
+}
+
+.skills-card .card-body .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.skills-card .card-body .skill input {
+  min-width: 2rem;
+}
+
+.skills-card .card-body .skill div,
+.skills-card .card-body .skill span {
+  font-family: dubellay;
+}
+
+.skills-card .card-body .skill .line {
+  border-bottom: solid 1px black;
+  margin: 0 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: VTCGoblinHand;
+}
+
+.skills-card .card-body .skill .line:focus {
+  outline: none;
+}
+
+.page-footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.basic-info {
+  background: #004f6d;
+}
+
+.basic-info p, .basic-info input {
+  font-family: VTCGoblinHandSC;
+}
+
+.basic-info .info-container {
+  -webkit-clip-path: polygon(99% 9%, 100.2% 101%, -0.2% 105%, 1% 9%, 336px -5.99%, 63.41% -5.98%);
+          clip-path: polygon(99% 9%, 100.2% 101%, -0.2% 105%, 1% 9%, 336px -5.99%, 63.41% -5.98%);
+}
+
+.attributes-section {
+  margin-top: 1rem;
+  background: white;
+  width: 100%;
+}
+
+.attributes-section h2 {
+  z-index: 1;
+  position: relative;
+  top: 15px;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.attributes-section .attributes-content-container {
+  background: #004f6d;
+}
+
+.attributes-section .attributes-content {
+  background: white;
+  -webkit-clip-path: polygon(99% 9%, 100.2% 101%, -0.2% 105%, 1% 9%, 336px -5.99%, 63.41% -5.98%);
+          clip-path: polygon(99% 9%, 100.2% 101%, -0.2% 105%, 1% 9%, 336px -5.99%, 63.41% -5.98%);
+  padding: 1rem;
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.attributes-section .attributes-content .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0.3rem 1rem;
+  border-right: solid 3px #004f6d;
+}
+
+.attributes-section .attributes-content .labels h3 {
+  font-family: VTCGoblinHandSC;
+  font-weight: normal;
+  padding: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.attributes-section .attributes-content .attribute-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.3rem 1rem;
+  border-right: solid 3px #004f6d;
+}
+
+.attributes-section .attributes-content .attribute-group .attribute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.attributes-section .attributes-content .attribute-group .attribute .content {
+  width: 100%;
+  padding: 0.4rem 0;
+  font-size: 1.2rem;
+  font-family: dubellay;
+}
+
+.attributes-section .attributes-content .attribute-group:last-child {
+  border-right: none;
+}
+
+.skills-section-container {
+  background: #004f6d;
+}
+
+.skills-section {
+  -webkit-clip-path: polygon(98.24% 1.32%, 105.82% 106.12%, -5.43% 104.12%, 1.39% 1.4%, 384px -1.48%, 69.38% -1.66%);
+          clip-path: polygon(98.24% 1.32%, 105.82% 106.12%, -5.43% 104.12%, 1.39% 1.4%, 384px -1.48%, 69.38% -1.66%);
+  padding: 1rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills-section .skills {
+  padding-right: 0.5rem;
+  width: 33.3%;
+  border-right: solid 3px #004f6d;
+}
+
+.skills-section .other-traits {
+  padding-left: 0.5rem;
+  width: 66.7%;
+}
+
+.skills-section .other-traits .other-traits-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills-section .other-traits .other-traits-content .column {
+  width: 50%;
+}
+
+.skills-section h2 {
+  text-align: center;
+}
+
+.skills,
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section {
+  background: white;
+}
+
+section h2 {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#merits-section {
+  padding: 1rem;
+}
+
+#merits-section h2 {
+  text-align: center;
+}
+
+#merits-section .sanctum {
+  padding-right: 0.5rem;
+  margin-top: 2rem;
+  width: 33.3%;
+  border-right: solid 3px #004f6d;
+}
+
+#merits-section .familiar {
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+  width: 67.7%;
+}
+
+#merits-section .familiar h3 {
+  text-align: center;
+}
+
+#traits-section {
+  padding: 1rem;
+}
+
+#traits-section .active-spells {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 35%;
+}
+
+#traits-section .active-spells .enchanted-items {
+  min-width: 185%;
+}
+
+#traits-section .active-spells .enchanted-items h4 {
+  font-style: italic;
+}
+
+#traits-section .active-spells .enchanted-items .type {
+  width: 40%;
+}
+
+#traits-section .active-spells .enchanted-items .power {
+  width: 30%;
+}
+
+#traits-section .active-spells .enchanted-items .dice-pool,
+#traits-section .active-spells .enchanted-items .mana {
+  width: 15%;
+}
+
+#traits-section .rotes {
+  width: 65%;
+}
+
+#traits-section .rotes h2 {
+  text-align: center;
+  width: 100%;
+}
+
+#traits-section .rotes .cards {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#traits-section .rotes .arcanum {
+  width: 20%;
+}
+
+#traits-section .rotes .level {
+  width: 10%;
+}
+
+#traits-section .rotes .spell {
+  width: 30%;
+}
+
+#traits-section .rotes .creator {
+  width: 20%;
+}
+
+#traits-section .rotes .rote {
+  width: 20%;
+}
+
+#extra-section {
+  padding: 1rem;
+}
+
+#extra-section .labeled {
+  width: 35%;
+}
+
+#extra-section .inputs {
+  width: 65%;
+}
+
+.bg-container {
+  background: #004f6d;
+}
+
+.bg-clipped {
+  padding: 1rem;
+  z-index: 1;
+  background: white;
+  -webkit-clip-path: polygon(99% 9%, 100.2% 101%, -0.2% 105%, 1% 9%, 336px -5.99%, 63.41% -5.98%);
+          clip-path: polygon(99% 9%, 100.2% 101%, -0.2% 105%, 1% 9%, 336px -5.99%, 63.41% -5.98%);
+}

@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Pavel40">
+    <meta name="description" content="Mage Character Sheet">
+
+    <title>Mage Character Sheet</title>
+
+    <link rel="stylesheet" href="mage.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="page-header">
+            <img src="./character-assets/Mage/mage-logo.png" alt="Mage The Awakening Second Edition">
+        </header>
+
+        <div class="basic-info avoid-clicks">
+            <div class="info-container">
+                <div class="info-section">
+                    <div>
+                        <p>Shadow Name:</p>
+                        <input type="text" id="shadow-name-mirror" class="avoid-clicks">
+                    </div>
+                    <div>
+                        <p>Player:</p>
+                        <input type="text" id="player-mirror" class="avoid-clicks">
+                    </div>
+                    <div>
+                        <p>Chronicle:</p>
+                        <input type="text" id="chronicle-mirror" class="avoid-clicks">
+                    </div>
+                </div>
+                <div class="info-section">
+                    <div>
+                        <p>Virtue:</p>
+                        <input type="text" id="virtue-mirror" class="avoid-clicks">
+                    </div>
+                    <div>
+                        <p>Vice:</p>
+                        <input type="text" id="vice-mirror" class="avoid-clicks">
+                    </div>
+                    <div>
+                        <p>Concept:</p>
+                        <input type="text" id="concept-mirror" class="avoid-clicks">
+                    </div>
+                </div>
+                <div class="info-section">
+                    <div>
+                        <p>Path:</p>
+                        <input type="text" id="path-mirror" class="avoid-clicks">
+                    </div>
+                    <div>
+                        <p>Order:</p>
+                        <input type="text" id="order-mirror" class="avoid-clicks">
+                    </div>
+                    <div>
+                        <p>Legacy:</p>
+                        <input type="text" id="legacy-mirror" class="avoid-clicks">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="tabs-nav">
+                <li><a href="#display-section" class="active nav-btn" autofocus>Display</a></li>
+                <li><a href="#main-section" class="nav-btn">Main</a></li>
+                <li><a href="#merits-section" class="nav-btn">Merits</a></li>
+                <li><a href="#traits-section" class="nav-btn">Mage Traits</a></li>
+                <li><a href="#equipment-section" class="nav-btn">Equipment</a></li>
+                <li><a href="#status-section" class="nav-btn">Status</a></li>
+                <li><a href="#custom-rolls-section" class="nav-btn">Custom Rolls</a></li>
+                <li><a href="#extra-section" class="nav-btn">Extra</a></li>
+            </ul>
+        </nav>
+
+        <div class="attributes-section">
+            <h2>Attributes</h2>
+            <div class="attributes-content-container">
+                <div class="attributes-content">
+                    <div class="labels">
+                        <h3>Power</h3>
+                        <h3>Finesse</h3>
+                        <h3>Resistance</h3>
+                    </div>
+                    <div class="attribute-group">
+                        <div class="attribute">
+                            <h4 class="content">Intelligence</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                        <div class="attribute">
+                            <h4 class="content">Wits</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                        <div class="attribute">
+                            <h4 class="content">Resolve</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attribute-group">
+                        <div class="attribute">
+                            <h4 class="content">Strength</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                        <div class="attribute">
+                            <h4 class="content">Dexterity</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                        <div class="attribute">
+                            <h4 class="content">Stamina</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attribute-group">
+                        <div class="attribute">
+                            <h4 class="content">Presence</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                        <div class="attribute">
+                            <h4 class="content">Manipulation</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                        <div class="attribute">
+                            <h4 class="content">Composure</h4>
+                            <div class="attribute-circles content">
+                                <img src="icons/dot-full.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="skills-section-container" id="display-section">
+            <div class="skills-section">
+                <div class="skills avoid-clicks">
+                    <h2>Skills</h2>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Mental</h3>
+                            <p><em>(3 unskilled)</em></p>
+                        </header>
+                        <div class="card-body">
+                            <div class="rote-skill-label">Rote<br>Skill</div>
+                            <div class="skill" id="academics-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Academics
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="computer-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Computer
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="crafts-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Crafts
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="investigation-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Investigation
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="medicine-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Medicine
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="occult-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Occult
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="politics-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Politics
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="science-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Science
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Physical</h3>
+                            <p><em>(1 unskilled)</em></p>
+                        </header>
+                        <div class="card-body">
+                            <div class="rote-skill-label">Rote<br>Skill</div>
+                            <div class="skill" id="athletics-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Athletics
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="brawl-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Brawl
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="drive-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Drive
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="firearms-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Firearms
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="larceny-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Larceny
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="stealth-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Stealth
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="survival-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Survival
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="weaponry-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Weaponry
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Social</h3>
+                            <p><em>(1 unskilled)</em></p>
+                        </header>
+                        <div class="card-body">
+                            <div class="rote-skill-label">Rote<br>Skill</div>
+                            <div class="skill" id="animal_ken-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Animal Ken
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="empathy-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Empathy
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="expression-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Expression
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="intimidation-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Intimidation
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="persuasion-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Persuasion
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="socialize-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Socialize
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="streetwise-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Streetwise
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="subterfuge-mirror">
+                                <div>
+                                    <input type="checkbox" class="avoid-clicks">
+                                    Subterfuge
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-traits">
+                    <h2>Other traits</h2>
+                    <div class="other-traits-content">
+                        <div class="column">
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Arcana</h3>
+                                </header>
+                                <div class="card-body">
+                                    <div class="skill">
+                                        <div>
+                                            Death
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div>
+                                            Fate
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div>
+                                            Forces
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div>
+                                            Life
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div>
+                                            Matter
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div>
+                                            Mind
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div>
+                                            Prime
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div>
+                                            Spirit
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div>
+                                            Space
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <div>
+                                            Time
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-card merits">
+                                <header>
+                                    <h3>Merits</h3>
+                                </header>
+                                <div class="card-body">
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="line"></span>
+                                        <div class="attribute-circles">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                            <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-card avoid-clicks" id="size_speed-mirror">
+                                <div class="card-body pt-1">
+                                    <div class="skill">
+                                        <span>Size:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Speed:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Defense:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Armor:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Initiative Mod:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Beats:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                        <div class="circles-boxes">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Experience:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Arcane Beats:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                        <div class="circles-boxes">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                            <img src="icons/box-empty.png" alt="box" class="box">
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span>Arcane Experiences:</span>
+                                        <span class="line" contenteditable="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="skills-card avoid-clicks">
+                                <header>
+                                    <h3>Health</h3>
+                                </header>
+                                <div class="card-body" id="health-mirror">
+                                    <div class="circles-boxes">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    </div>
+                                    <div class="circles-boxes">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-card avoid-clicks" id="willpower-mirror">
+                                <header>
+                                    <h3>Willpower</h3>
+                                </header>
+                                <div class="circles-boxes">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                                <div class="circles-boxes">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Gnosis</h3>
+                                </header>
+                                <div class="circles-boxes">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Mana</h3>
+                                </header>
+                                <div class="circles-boxes">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                </div>
+                                <div class="circles-boxes">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Wisdom</h3>
+                                </header>
+                                <div class="circles-boxes">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Conditions</h3>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Aspirations</h3>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Obsessions</h3>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-section" class="hidden">
+            <div class="basic-info">
+                <div class="info-container">
+                    <div class="info-section">
+                        <div>
+                            <p>Shadow Name:</p>
+                            <input type="text" id="shadow-name">
+                        </div>
+                        <div>
+                            <p>Player:</p>
+                            <input type="text" id="player">
+                        </div>
+                        <div>
+                            <p>Chronicle:</p>
+                            <input type="text" id="chronicle">
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <div>
+                            <p>Virtue:</p>
+                            <input type="text" id="virtue">
+                        </div>
+                        <div>
+                            <div>Vice:</div>
+                            <input type="text" id="vice">
+                        </div>
+                        <div>
+                            <p>Concept:</p>
+                            <input type="text" id="concept">
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <div>
+                            <p>Path:</p>
+                            <input type="text" id="path">
+                        </div>
+                        <div>
+                            <p>Order:</p>
+                            <input type="text" id="order">
+                        </div>
+                        <div>
+                            <p>Legacy:</p>
+                            <input type="text" id="legacy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Skills</h2>
+            <div class="flex">
+                <div class="max-w">
+                    <div class="skills-card">
+                        <header>
+                            <h3>Mental</h3>
+                            <p><em>(3 unskilled)</em></p>
+                        </header>
+                        <div class="card-body">
+                            <div class="rote-skill-label">Rote<br>Skill</div>
+                            <div class="skill" id="academics">
+                                <div>
+                                    <input type="checkbox">
+                                    Academics
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="computer">
+                                <div>
+                                    <input type="checkbox">
+                                    Computer
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="crafts">
+                                <div>
+                                    <input type="checkbox">
+                                    Crafts
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="investigation">
+                                <div>
+                                    <input type="checkbox">
+                                    Investigation
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="medicine">
+                                <div>
+                                    <input type="checkbox">
+                                    Medicine
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="occult">
+                                <div>
+                                    <input type="checkbox">
+                                    Occult
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="politics">
+                                <div>
+                                    <input type="checkbox">
+                                    Politics
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="science">
+                                <div>
+                                    <input type="checkbox">
+                                    Science
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-card" id="size_speed">
+                        <div class="card-body pt-1">
+                            <div class="skill">
+                                <span>Size:</span>
+                                <span class="line" contenteditable="true"></span>
+                            </div>
+                            <div class="skill">
+                                <span>Speed:</span>
+                                <span class="line" contenteditable="true"></span>
+                            </div>
+                            <div class="skill">
+                                <span>Defense:</span>
+                                <span class="line" contenteditable="true"></span>
+                            </div>
+                            <div class="skill">
+                                <span>Armor:</span>
+                                <span class="line" contenteditable="true"></span>
+                            </div>
+                            <div class="skill">
+                                <span>Initiative Mod:</span>
+                                <span class="line" contenteditable="true"></span>
+                            </div>
+                            <div class="skill">
+                                <span>Beats:</span>
+                                <span class="line" contenteditable="true"></span>
+                                <div class="circles-boxes">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Experience:</span>
+                                <span class="line" contenteditable="true"></span>
+                            </div>
+                            <div class="skill">
+                                <span>Arcane Beats:</span>
+                                <span class="line" contenteditable="true"></span>
+                                <div class="circles-boxes">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Arcane Experiences:</span>
+                                <span class="line" contenteditable="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w">
+                    <div class="skills-card">
+                        <header>
+                            <h3>Physical</h3>
+                            <p><em>(1 unskilled)</em></p>
+                        </header>
+                        <div class="card-body">
+                            <div class="rote-skill-label">Rote<br>Skill</div>
+                            <div class="skill" id="athletics">
+                                <div>
+                                    <input type="checkbox">
+                                    Athletics
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="brawl">
+                                <div>
+                                    <input type="checkbox">
+                                    Brawl
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="drive">
+                                <div>
+                                    <input type="checkbox">
+                                    Drive
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="firearms">
+                                <div>
+                                    <input type="checkbox">
+                                    Firearms
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="larceny">
+                                <div>
+                                    <input type="checkbox">
+                                    Larceny
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="stealth">
+                                <div>
+                                    <input type="checkbox">
+                                    Stealth
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="survival">
+                                <div>
+                                    <input type="checkbox">
+                                    Survival
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="weaponry">
+                                <div>
+                                    <input type="checkbox">
+                                    Weaponry
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w">
+                    <div class="skills-card">
+                        <header>
+                            <h3>Social</h3>
+                            <p><em>(1 unskilled)</em></p>
+                        </header>
+                        <div class="card-body">
+                            <div class="rote-skill-label">Rote<br>Skill</div>
+                            <div class="skill" id="animal_ken">
+                                <div>
+                                    <input type="checkbox">
+                                    Animal Ken
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="empathy">
+                                <div>
+                                    <input type="checkbox">
+                                    Empathy
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="expression">
+                                <div>
+                                    <input type="checkbox">
+                                    Expression
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="intimidation">
+                                <div>
+                                    <input type="checkbox">
+                                    Intimidation
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="persuasion">
+                                <div>
+                                    <input type="checkbox">
+                                    Persuasion
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="socialize">
+                                <div>
+                                    <input type="checkbox">
+                                    Socialize
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="streetwise">
+                                <div>
+                                    <input type="checkbox">
+                                    Streetwise
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+
+                            <div class="skill" id="subterfuge">
+                                <div>
+                                    <input type="checkbox">
+                                    Subterfuge
+                                </div>
+                                <div class="line"></div>
+                                <div class="attribute-circles">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="merits-section" class="hidden">
+            <h2>Expanded merits</h2>
+            <div class="flex expanded-merits">
+                <div class="max-w">
+                    <div class="skills-card">
+                        <header>
+                            <h3>Allies</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Contacts</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Library</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Mentor</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header class="flex content-center">
+                            <h3 class="pr-1">Other</h3>
+                            <div class="flex">
+                                <span>(</span>
+                                <input type="text">
+                                <span>)</span>
+                            </div>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w">
+                    <div class="skills-card">
+                        <header>
+                            <h3>Resources</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Sleepwalker retainer</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Status</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h3>Thrall</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header class="flex content-center">
+                            <h3 class="pr-1">Other</h3>
+                            <div class="flex">
+                                <span>(</span>
+                                <input type="text">
+                                <span>)</span>
+                            </div>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="sanctum">
+                    <div class="skills-card">
+                        <header>
+                            <h3>Sanctum</h3>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                </div>
+                <div class="familiar">
+                    <h3>Familiar</h3>
+                    <div class="flex">
+                        <div class="skills-card w-half">
+                            <div class="card-body">
+                                <div class="skill">
+                                    <span class="pr-1">Rank:</span>
+                                    <div class="attribute-circles">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span>Description:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <div class="skill">
+                                    <span>Power:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <div class="skill">
+                                    <span>Finesse:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <div class="skill">
+                                    <span>Resistance:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <div class="skill">
+                                    <span>Influence:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <div class="skill">
+                                    <span>Ban:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <input type="text" class="line standalone">
+                                <div class="skill">
+                                    <span>Bane:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <input type="text" class="line standalone">
+                                <div class="skill">
+                                    <span>Size:</span>
+                                    <input type="text" class="line">
+                                    <span>Speed:</span>
+                                    <input type="text" class="line">
+                                </div>
+                                <div class="skill">
+                                    <span>Defense:</span>
+                                    <input type="text" class="line">
+                                    <span>Initiative:</span>
+                                    <input type="text" class="line">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-half">
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Numina</h3>
+                                </header>
+                                <div class="card-body">
+                                    <div class="skill">
+                                        <input type="text" class="line">
+                                    </div>
+                                    <div class="skill">
+                                        <input type="text" class="line">
+                                    </div>
+                                    <div class="skill">
+                                        <input type="text" class="line">
+                                    </div>
+                                    <div class="skill">
+                                        <input type="text" class="line">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Corpus/Health</h3>
+                                </header>
+                                <div class="card-body" id="health">
+                                    <div class="circles-boxes">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    </div>
+                                    <div class="circles-boxes">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-card" id="willpower">
+                                <header>
+                                    <h3>Willpower</h3>
+                                </header>
+                                <div class="card-body">
+                                    <div class="circles-boxes">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                        <img src="icons/dot-empty.png" alt="dot" class="attribute-circle">
+                                    </div>
+                                    <div class="circles-boxes">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                        <img src="icons/box-empty.png" alt="box" class="box">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h3>Essence</h3>
+                                </header>
+                                <div class="circles-boxes">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                </div>
+                                <div class="circles-boxes">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                    <img src="icons/box-empty.png" alt="box" class="box">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="traits-section" class="hidden">
+            <div class="flex">
+                <div class="active-spells">
+                    <div class="skills-card">
+                        <header>
+                            <h2>Active Spells</h2>
+                            <em>Max = Gnosis</em>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h2>Yantras</h2>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <header>
+                            <h2>Inured Spells</h2>
+                        </header>
+                        <div class="card-body">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                            <input type="text" class="line standalone">
+                        </div>
+                    </div>
+                    <div class="enchanted-items">
+                        <h2>Enchanted items</h2>
+                        <div class="flex">
+                            <div class="skills-card type">
+                                <header>
+                                    <h4>Type</h4>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                            <div class="skills-card power">
+                                <header>
+                                    <h4>Power</h4>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                            <div class="skills-card dice-pool">
+                                <header>
+                                    <h4>Dice Pool</h4>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                            <div class="skills-card mana">
+                                <header>
+                                    <h4>Mana</h4>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rotes">
+                    <h2>Rotes</h2>
+                    <div class="cards">
+                        <div class="skills-card arcanum">
+                            <header>
+                                <h4><em>Arcanum</em></h4>
+                            </header>
+                            <div class="card-body">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                            </div>
+                        </div>
+                        <div class="skills-card level">
+                            <header>
+                                <h4><em>Level</em></h4>
+                            </header>
+                            <div class="card-body">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                            </div>
+                        </div>
+                        <div class="skills-card spell">
+                            <header>
+                                <h4><em>Spell</em></h4>
+                            </header>
+                            <div class="card-body">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                            </div>
+                        </div>
+                        <div class="skills-card creator">
+                            <header>
+                                <h4><em>Creator</em></h4>
+                            </header>
+                            <div class="card-body">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                            </div>
+                        </div>
+                        <div class="skills-card rote">
+                            <header>
+                                <h4><em>Rote skill</em></h4>
+                            </header>
+                            <div class="card-body">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="skills-card max-w">
+                            <header>
+                                <h2>Praxes</h2>
+                            </header>
+                            <div class="card-body">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                                <input type="text" class="line standalone">
+                            </div>
+                        </div>
+                        <div class="max-w">
+                            <div class="skills-card">
+                                <header>
+                                    <h2>Arcana attainments</h2>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h2>Legacy Attainments</h2>
+                                </header>
+                                <div class="card-body">
+                                    <div class="skill">
+                                        <span>1st</span>
+                                        <input type="text" class="line">
+                                    </div>
+                                    <input type="text" class="line standalone">
+                                    <div class="skill">
+                                        <span>2nd</span>
+                                        <input type="text" class="line">
+                                    </div>
+                                    <input type="text" class="line standalone">
+                                    <div class="skill">
+                                        <span>3rd</span>
+                                        <input type="text" class="line">
+                                    </div>
+                                    <input type="text" class="line standalone">
+                                    <div class="skill">
+                                        <span>4th</span>
+                                        <input type="text" class="line">
+                                    </div>
+                                    <input type="text" class="line standalone">
+                                    <div class="skill">
+                                        <span>5th</span>
+                                        <input type="text" class="line">
+                                    </div>
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                            <div class="skills-card">
+                                <header>
+                                    <h2>Magical tools</h2>
+                                </header>
+                                <div class="card-body">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <input type="text" class="line standalone">
+                                    <div class="skill">
+                                        <span>Dedicated:</span>
+                                        <input type="text" class="line">
+                                    </div>
+                                    <input type="text" class="line standalone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="extra-section" class="hidden">
+            <h2>Description</h2>
+            <div class="flex">
+                <div class="skills-card labeled">
+                    <div class="card-body">
+                        <div class="skill">
+                            <span>Sympathetic Name:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Age:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Apparent Age:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Date of Birth:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Age of Awakening:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Hair:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Eyes:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Race:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Nationality:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Height:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Weight:</span>
+                            <input type="text" class="line">
+                        </div>
+                        <div class="skill">
+                            <span>Sex:</span>
+                            <input type="text" class="line">
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-card inputs">
+                    <div class="card-body">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                    </div>
+                </div>
+            </div>
+            <div class="skills-card">
+                <header>
+                    <h2>Nimbus</h2>
+                </header>
+                <div class="card-body">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                </div>
+            </div>
+            <div class="skills-card">
+                <header>
+                    <h2>History</h2>
+                </header>
+                <div class="card-body">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                </div>
+            </div>
+            <div class="skills-card">
+                <header>
+                    <h2>Dedication/Oath</h2>
+                </header>
+                <div class="card-body">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                    <input type="text" class="line standalone">
+                </div>
+            </div>
+            <div class="skills-card">
+                <header>
+                    <h2>Cabal</h2>
+                </header>
+                <div class="card-body">
+                    <div class="skill">
+                        <span>Cabal name:</span>
+                        <input type="text" class="line">
+                    </div>
+                    <div class="skill">
+                        <span>Sigil:</span>
+                        <input type="text" class="line">
+                    </div>
+                    <input type="text" class="line standalone">
+                    <div class="skill">
+                        <span>Protocols/Rites:</span>
+                        <input type="text" class="line">
+                    </div>
+                    <input type="text" class="line standalone">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="skills-card max-w">
+                    <header>
+                        <h2>Member</h2>
+                    </header>
+                    <div class="card-body">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                    </div>
+                </div>
+                <div class="skills-card max-w">
+                    <header>
+                        <h2>Title</h2>
+                    </header>
+                    <div class="card-body">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                    </div>
+                </div>
+                <div class="skills-card max-w">
+                    <header>
+                        <h2>Path/Order</h2>
+                    </header>
+                    <div class="card-body">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                        <input type="text" class="line standalone">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <p>
+                Aspirations 3 • Obsessions – 1 at Gnosis 1 or 2, 2 at Gnosis 3 • Attributes 5/4/3 (+1 dot in any
+                Resistance
+                Attribute) • Skills 11/7/4 (+1 dot of Occult if in an Order) (+3 Specialties)
+                Arcana — 6 dots, none over 3, at least 1 dot in each Ruling Arcanum, none in Inferior Arcanum • Praxes –
+                1
+                per dot of Gnosis • Rotes 3 • Merits 10 • Health = Stamina + Size
+                Willpower = Resolve + Composure • Size = 5 • Defense = Lowest of Dexterity or Wits + Athletics •
+                Initiative
+                Mod = Dexterity + Composure • Speed = Strength + Dexterity + 5 • Starting Wisdom = 7
+                Starting Gnosis = 1 • Starting Mana = Full as per Gnosis</p>
+        </footer>
+    </div>
+</body>
+
+</html>
