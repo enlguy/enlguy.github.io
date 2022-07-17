@@ -344,7 +344,8 @@ header::after {
 
 .skills {
   padding: 2rem;
-  background: #7d7c7c;
+  background: rgb(54,32,104);
+background: radial-gradient(circle, rgba(54,32,104,1) 0%, rgba(47,19,78,1) 100%);
 }
 
 .skills-title {
@@ -379,7 +380,8 @@ header::after {
 }
 
 .portfolio {
-  background: #2f134e;
+  background: rgb(79,0,87);
+  background: linear-gradient(0deg, rgba(79,0,87,1) 0%, rgba(62,49,138,1) 100%);;
   padding: 3rem 2rem;
 }
 
@@ -569,7 +571,7 @@ footer {
 
 .contact {
   padding: 2rem;
-  background-color: rgba(14, 129, 250, 0.93);
+  background-color: #4F0057;
   height: 200px;
 }
 .contact h3 {
