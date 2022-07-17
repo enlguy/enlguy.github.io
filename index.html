@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +10,22 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap"
 		rel="stylesheet">
+                
+	<script>
+	function colorChange() {
+		colorMenu.style.color
+	}
+
+	colorMenu.addEventListener('onMouseOver', handleMouseOver)
+	</script>
+
 </head>
 
 <body onclick>
+
 	<header role="header">
 		<nav class="nav-menu max-width-limit">
-			<a href="#"><img class="header-logo" src="images/logo.png" alt="DS Logo"></a>
+
 
 			<ul class="nav-list" role="menu">
 				<div class="marker"></div>
@@ -56,29 +67,24 @@
 			<div class="hero-text">
 				<h1>Jack Epner</h1>
 				<h2>Creator, Developer</h2>
-				<p class="changing-text"> Placeholder</p>
 			</div>
 		</div>
-
-
 	</main>
+
 
 	<!-- Skills Section -->
 	<div class="skills" id="skills" role="skills content">
 		<div class="max-width-limit">
 			<h2 class="skills-title">Tech</h2>
-
-			<!-- Use flex box with inline flex for 2 skill icons each. then columns mode on mobile -->
-			<div class="skill-icon-container">
-				<!-- Each icon pack will have 2 inside -->
-				<img src="images/HTML5_Logo_128.png" alt="HTML5">
-				<img src="images/css3_logo.png" alt="CSS3">
-				<img src="images/javascript-logo.png" alt="Javascript">
-				<img src="images/jquery-logo.png" alt="jquery">
-				<img src="images/php-logo.png" alt="PHP">
-				<img src="images/wordpress-logo.png" alt="Wordpress">
-				<img src="images/python_logo.png" alt="Python">
-				<img src="images/rvue.png" alt="Vue">
+			<div class="skill-icon-container">			
+           		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5"/>			 	
+       			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3"/>			
+            	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript"/>
+            	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="jquery"/>
+            	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"/>
+			    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="Wordpress"/>  
+           		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original-wordmark.svg" alt="woocommerce"/>
+            	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs"/>
 			</div>
 		</div>
 	</div>
@@ -98,7 +104,7 @@
 						<br>
 						Some of my values include honesty, respect, open-mindedness, and kindness.  I approach any project as an opportunity to help someone.  I like to solve problems.
 						<br>
-						Beyond that, I love travel (I've lived in 12 countries, and visited many more), speak a couple languages (parlez-vous francais?), and live to explore this great world.
+						Beyond that, I love travel (I've lived in 12 countries, and visited many more), speak a couple languages (parlez-vous fran&#231;ais?), and live to explore this great world.
 					</p>
 
 					<a target="_blank" class="cv-button" role="button" href="https://drive.google.com/file/d/1iCPLcFoVfQGuTcCvu_vkCdaesqGSGjzs/view?usp=sharing">
@@ -120,6 +126,10 @@
 
 
 
+
+
+
+
 	<!-- Portfolio section -->
 
 	<div class="portfolio" id="projects" role="project content">
@@ -136,7 +146,6 @@
 							<div class="overlay-text">
 
 								<h4>Ace Mechanical Services</h4>
-
 								<p>
 									<span>Customizations</span> integrated with the <span>Wordpress CMS</span>, using <span>css</span>, <span>php</span>
 								     and <span>html</span>.
@@ -144,6 +153,9 @@
 
 
 								<div class="project-icons">
+
+								<!--	<a target="_blank" href="https://github.com/Sumner-David/Natural-Tours-WP-Theme"><img
+											src="./images/contact-images/gitHub-white.svg" alt="Github Icon"></a> -->
 
 									<a target="_blank" href="https://www.acehvacpro.com/"><img
 											src="images/link-icon.svg" alt="Link Icon"></a>
@@ -169,6 +181,8 @@
 								</p>
 
 								<div class="project-icons">
+									<!-- <a target="_blank" href="https://github.com/Sumner-David/MyTeam-Design-System"><img
+											src="./images/contact-images/gitHub-white.svg" alt="Github Icon"></a>-->
 
 									<a target="_blank" href="https://www.uniadmissions.co.uk"><img src="images/link-icon.svg" alt="Link Icon"></a>
 
@@ -195,6 +209,8 @@
 								</p>
 
 								<div class="project-icons">
+									<!-- <a target="_blank" href="https://github.com/Sumner-David/SuccessByDesign"><img
+											src="./images/contact-images/gitHub-white.svg" alt="Github Icon"></a> -->
 
 									<a target="_blank" href="https://musicthingie.herokuapp.com/"><img src="images/link-icon.svg"
 											alt="Link Icon"></a>
@@ -204,6 +220,7 @@
 						</div>
 					</div>
 				</div>
+
 
 
 				<div class="project-card">
@@ -219,7 +236,9 @@
 									<span>css</span>
 
 									<div class="project-icons">
-					
+										<!-- <a target="_blank" href="https://github.com/Sumner-David/CloundAnimationParallax"><img
+												src="./images/contact-images/gitHub-white.svg" alt="Github Icon"></a> -->
+
 										<a target="_blank" href="https://codepen.io/enlguy/pen/RwQxPEq"><img
 												src="images/link-icon.svg" alt="Link Icon"></a>
 									</div>
@@ -267,6 +286,8 @@
 								</p>
 
 								<div class="project-icons">
+									<!-- <a target="_blank" href="https://github.com/Sumner-David/Caching-Landing-Page"><img
+											src="./images/contact-images/gitHub-white.svg" alt="Github Icon"></a> -->
 
 									<a target="_blank" href="https://codepen.io/enlguy/pen/qBppgRz"><img src="images/link-icon.svg"
 											alt="Link Icon"></a>
@@ -290,12 +311,6 @@
 			<h3>Please contact&nbsp;me</h3>
 
 			<div class="contact-list">
-				<!-- <div class="contact-image" role="button">
-					<a target="_blank" href="https://github.com/enlguy">
-						<img src="./images/contact-images/gitHub-white.svg" alt="Github Logo">
-					</a> 
-
-				</div> -->
 				<div class="contact-image" role="button">
 					<a href="mailto:jack282323@gmail.com">
 						<img src="images/maillogo.png" alt="Email">
@@ -308,6 +323,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<!-- End of Contact -->
@@ -333,7 +349,6 @@
 		</div>
 	</footer>
 
-	<script src="./js/dist/app.js?v=2.4"></script>
-
 </body>
+
 </html>
