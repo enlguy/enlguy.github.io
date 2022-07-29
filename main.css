@@ -195,7 +195,7 @@ header::after {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   -webkit-animation: hero-glow 3s ease-in-out infinite alternate;
           animation: hero-glow 3s ease-in-out infinite alternate;
 }
@@ -344,7 +344,8 @@ header::after {
 
 .skills {
   padding: 2rem;
-  background: #323232;
+  background: rgb(54,32,104);
+background: radial-gradient(circle, rgba(54,32,104,1) 0%, rgba(47,19,78,1) 100%);
 }
 
 .skills-title {
@@ -379,7 +380,8 @@ header::after {
 }
 
 .portfolio {
-  background: #323232;
+  background: rgb(79,0,87);
+  background: linear-gradient(0deg, rgba(79,0,87,1) 0%, rgba(62,49,138,1) 100%);;
   padding: 3rem 2rem;
 }
 
@@ -569,7 +571,8 @@ footer {
 
 .contact {
   padding: 2rem;
-  background-color: rgba(14, 129, 250, 0.93);
+  background-color: #4F0057;
+  height: 200px;
 }
 .contact h3 {
   color: #ffffff;
@@ -590,9 +593,9 @@ footer {
 
 .contact-image img {
   width: 90px;
-  margin: 2rem;
   padding: 10px;
   border-radius: 10px;
+  margin-top: -50px;
   transition: background-color 0.05s linear;
 }
 .contact-image img:hover {
@@ -658,7 +661,7 @@ body::-webkit-scrollbar-thumb {
   .hero-text .hero-content {
     margin-bottom: 1rem;
   }
-  .hero-text .changing-text {
+  .hero-text {
     padding: 0 0.5rem;
   }
 
