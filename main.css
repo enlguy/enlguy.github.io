@@ -96,7 +96,7 @@
 
 @font-face {
   font-family: "black_sharp-webfont";
-  src: url("./fonts/black_sharp-webfont.woff");
+  src: url("./fonts/black_sharp-webfont.woff") format('woff');
 }
 
 * {
@@ -115,13 +115,13 @@ body {
   position: relative;
 }
 
-title {
-  font-family: "black_sharp-webfont";
-}
-
 .max-width-limit {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+#name {
+  font-family: "black_sharp-webfont";
 }
 
 header {
@@ -396,8 +396,8 @@ header::after {
 
 .skills {
   padding: 2rem;
-  background: rgb(54, 32, 104);
-  background: radial-gradient(circle, rgba(54, 32, 104, 1) 0%, rgba(47, 19, 78, 1) 100%);
+  background: url('./images/phife2.jpg');
+  /* background: radial-gradient(circle, rgba(54, 32, 104, 1) 0%, rgba(47, 19, 78, 1) 100%); */
 }
 
 .skills-title {
@@ -435,7 +435,7 @@ header::after {
 
 .portfolio {
   background: rgb(79, 0, 87);
-  background: linear-gradient(0deg, rgba(79, 0, 87, 1) 0%, rgba(62, 49, 138, 1) 100%);
+  background: linear-gradient(0deg, rgba(0, 99, 255, .7) 0%, rgba(42, 0, 232, 1) 100%);
   ;
   padding: 3rem 2rem;
 }
@@ -666,7 +666,6 @@ footer {
 
 .contact-list {
   display: flex;
-  flex-wrap: wrap;
   width: 68%;
   margin: 0 auto;
   justify-content: space-around;
