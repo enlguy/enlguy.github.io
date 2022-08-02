@@ -99,6 +99,11 @@
   src: url("./fonts/black_sharp-webfont.woff") format('woff');
 }
 
+@font-face {
+  font-family: "SpriteGraffiti-Regular";
+  src: url("./fonts/SpriteGraffiti-Regular.woff") format('woff');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -122,6 +127,11 @@ body {
 
 #name {
   font-family: "black_sharp-webfont";
+}
+
+#subtitle {
+  font-family: "SpriteGraffiti-Regular";
+  color: rgba(255, 33, 155, 1);
 }
 
 header {
