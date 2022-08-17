@@ -96,7 +96,12 @@
 
 @font-face {
   font-family: "black_sharp-webfont";
-  src: url("./fonts/black_sharp-webfont.woff");
+  src: url("./fonts/black_sharp-webfont.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpriteGraffiti-Regular";
+  src: url("./fonts/SpriteGraffiti-Regular.woff") format('woff');
 }
 
 * {
@@ -115,13 +120,18 @@ body {
   position: relative;
 }
 
-title {
-  font-family: "black_sharp-webfont";
-}
-
 .max-width-limit {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+#name {
+  font-family: "black_sharp-webfont";
+}
+
+#subtitle {
+  font-family: "SpriteGraffiti-Regular";
+  color: rgba(255, 33, 155, 1);
 }
 
 header {
@@ -396,12 +406,12 @@ header::after {
 
 .skills {
   padding: 2rem;
-  background: rgb(54, 32, 104);
-  background: radial-gradient(circle, rgba(54, 32, 104, 1) 0%, rgba(47, 19, 78, 1) 100%);
+  background: url('./images/phife2.jpg');
+  /* background: radial-gradient(circle, rgba(54, 32, 104, 1) 0%, rgba(47, 19, 78, 1) 100%); */
 }
 
 .skills-title {
-  color: #dadada;
+  color: #545453;
   font-size: 2.2rem;
   font-weight: 500;
   border-bottom: solid 3px #b6a9a9;
@@ -435,7 +445,7 @@ header::after {
 
 .portfolio {
   background: rgb(79, 0, 87);
-  background: linear-gradient(0deg, rgba(79, 0, 87, 1) 0%, rgba(62, 49, 138, 1) 100%);
+  background: linear-gradient(0deg, rgba(0, 99, 255, .7) 0%, rgba(42, 0, 232, 1) 100%);
   ;
   padding: 3rem 2rem;
 }
@@ -666,7 +676,6 @@ footer {
 
 .contact-list {
   display: flex;
-  flex-wrap: wrap;
   width: 68%;
   margin: 0 auto;
   justify-content: space-around;

@@ -10,25 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap"
 		rel="stylesheet">
 
-	<!-- Google Tag Manager -->
-	<script>
-		(function (w, d, s, l, i) {
-			w[l] = w[l] || [];
-			w[l].push({
-				'gtm.start': new Date().getTime(),
-				event: 'gtm.js'
-			});
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true;
-			j.src =
-				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-NVBVC4J');
-	</script>
-	<!-- End Google Tag Manager -->
-
 </head>
 
 <body onclick>
@@ -40,7 +21,6 @@
 
 	<header role="header">
 		<nav class="nav-menu max-width-limit">
-			<a href="#"><img class="header-logo" src="images/logo.png" alt="DS Logo"></a>
 
 			<ul class="nav-list" role="menu">
 				<div class="marker"></div>
@@ -80,8 +60,9 @@
 
 			<!-- Top level -->
 			<div class="hero-text">
-				<h1>Jack Epner</h1>
-				<h2>Creator, Developer</h2>
+				<h1 id="name">Jack Epner</h1>
+				<br><br><br>
+				<h2 id="subtitle">Creator &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Developer</h2>
 				<p class="changing-text"> Placeholder</p>
 			</div>
 		</div>
@@ -100,14 +81,21 @@
 			<!-- Use flex box with inline flex for 2 skill icons each. then columns mode on mobile -->
 			<div class="skill-icon-container">
 				<!-- Each icon pack will have 2 inside -->
-				<img src="images/HTML5_Logo_128.png" alt="HTML5">
-				<img src="images/css3_logo.png" alt="CSS3">
-				<img src="images/javascript-logo.png" alt="Javascript">
-				<img src="images/jquery-logo.png" alt="jquery">
-				<img src="images/php-logo.png" alt="PHP">
-				<img src="images/wordpress-logo.png" alt="Wordpress">
-				<img src="images/python_logo.png" alt="Python">
-				<img src="images/rvue.png" alt="Vue">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+					alt="HTML5" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+					alt="CSS3">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+					alt="Javascript">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+					alt="MongoDB">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt=" PHP">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+					alt="Wordpress">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg"
+					alt="WooCommerce">
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+					alt="Node.js">
 			</div>
 		</div>
 	</div>
@@ -119,19 +107,21 @@
 		<div class="max-width-limit">
 			<div class="about-container">
 				<div class="about-content">
-					<h2>About Jack</h2>
+					<h2>Me, Myself, and I</h2>
 
 					<!-- Add content here -->
 					<p>
 						Hi, I'm Jack. It's very nice of you to find me here. I guess I could write a lot about how much
 						time I spend on computers, and how I'm mostly self-taught in web development over many years,
-						but that would only give you a narrow view of how we might work together.
+						but that would only give you a narrow view of how well we might work together.
 						<br>
 						Some of my values include honesty, respect, open-mindedness, and kindness. I approach any
 						project as an opportunity to help someone. I like to solve problems.
 						<br>
-						Beyond that, I love travel (I've lived in 12 countries, and visited many more), speak a couple
-						languages (parlez-vous fran&ccedilais?), and live to explore this great world.
+						Beyond that, I love most any form of art, nature, and travel. I've lived in 12 countries (and
+						visited many more), am bilingual (parlez-vous fran&ccedilais?), and speak smatterings of several
+						other languages (though we won't get much farther than greetings in Polish, Khmer, or Serbian).
+						I live to explore this great world.
 					</p>
 
 					<a target="_blank" class="cv-button" role="button"
@@ -292,15 +282,17 @@
 				</div>
 
 				<div class="project-card">
-					<h3>Quick Survey</h3>
+					<h3>Drum Pads</h3>
 					<div class="project-image caching-landing">
 						<div class="card-overlay">
 							<div class="overlay-text">
 
-								<h4>Quick Survey Form</h4>
+								<h4>Ready to go remix</h4>
 
 								<p>
-									Small survey form coded and styled with <span>html</span> and <span> css</span>.
+									Drum pads ready to remix "Suga Suga" made with <span>html</span>, <span>css</span>,
+									and
+									<span>js</span>.
 								</p>
 
 								<div class="project-icons">
@@ -331,15 +323,12 @@
 					<img src="images/maillogo.png" alt="Email">
 				</a>
 			</div>
+			<br>
 			<div class="contact-image" role="button">
 				<a target="_blank" href="https://www.linkedin.com/in/jack-epner/">
 					<img src="images/linkedin-logo.png" alt="Linkedin">
 				</a>
 			</div>
-			<!-- <div class="contact-image">
-										<img src="./images/contact-images/cv.svg" alt="CV">
-								</div> -->
-
 
 		</div>
 	</div>
@@ -363,7 +352,8 @@
 				</ul>
 
 				<p class="copyright">
-					Developed by Jack Epner &copy; 2022
+					Developed by Jack Epner &copy;
+					<script>document.write(new Date().getFullYear())</script>
 				</p>
 			</div>
 		</div>
@@ -372,9 +362,6 @@
 
 	<!-- <script src="./js/app.js"></script> -->
 	<script src="./js/dist/app.js?v=2.4"></script>
-
-
-
 
 </body>
 
