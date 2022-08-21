@@ -676,7 +676,7 @@ footer {
 
 .contact-list {
   width: 68%;
-  margin: 10px auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -686,7 +686,7 @@ footer {
   width: 90px;
   padding: 10px;
   border-radius: 10px;
-  margin-top: -50px;
+  margin-top: -25px;
   transition: background-color 0.05s linear;
 }
 
