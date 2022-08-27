@@ -603,7 +603,7 @@ header::after {
 }
 
 .project-card .clouds {
-  background: url("images/space.png");
+  background: url("images/uniad.png");
   background-size: cover;
   background-position: center;
 }
@@ -615,7 +615,7 @@ header::after {
 }
 
 .project-card .myteam {
-  background: url("images/uniad.png");
+  background: url("images/fakeapp.png");
   background-size: cover;
   background-position: center;
 }
