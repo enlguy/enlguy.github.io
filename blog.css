@@ -1,7 +1,20 @@
-body{
-    margin-top:20px;
-    background:#f3f3f3;
+body {
+    margin-top: 20px;
+    background: #97a6d6;
 }
+
+p {
+    font-family: Trebuchet MS;
+}
+
+.header {
+    text-align: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 /*
 Timeline
 */
@@ -23,9 +36,9 @@ Timeline
     width: 3px;
     background: #3498db;
     z-index: 0;
-    
-        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .page-timeline:after {
@@ -38,9 +51,9 @@ Timeline
     background: linear-gradient(to bottom, #4782d3, rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px;
-    
-        -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .vtimeline-content {
@@ -50,9 +63,9 @@ Timeline
     padding: 35px 20px;
     border-radius: 3px;
     text-align: left;
-    
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .vtimeline-content h3 {
@@ -92,7 +105,7 @@ Timeline
     display: block;
     font-size: 1.5em;
     line-height: 50px;
-    
+
 }
 
 .vtimeline-date {
@@ -104,22 +117,26 @@ Timeline
     font-weight: 400;
     color: #374054;
 }
+
 .post-meta {
     padding-top: 15px;
     margin-bottom: 20px;
 }
+
 .post-meta li:not(:last-child) {
     margin-right: 10px;
 }
+
 h3 {
     font-family: "Montserrat", sans-serif;
     color: #252525;
-    font-weight: 700;
+    font-weight: 800;
     font-variant-ligatures: common-ligatures;
     margin-top: 0;
     letter-spacing: -0.2px;
     line-height: 1.3;
 }
+
 .mb20 {
     margin-bottom: 20px !important;
 }

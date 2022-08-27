@@ -1,7 +1,8 @@
-UNDER CONSTRUCTION
-
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="blog.css">
+<div class="header">
+    BLOG
+</div>
 <div class="container mb80">
     <div class="page-timeline">
         <div class="vtimeline-point">
@@ -10,26 +11,26 @@ UNDER CONSTRUCTION
             </div>
             <div class="vtimeline-block">
                 <span class="vtimeline-date">August 27, 2022</span><div class="vtimeline-content">
-                    <a href="#"><img src="https://via.placeholder.com/700x400" alt="" class="img-fluid mb20"></a>
-                    <a href="#"><h3>Standard post title</h3></a>
+                    <a href="#"><img src="images/deploy.png" alt="" class="img-fluid mb20"></a>
+                    <a href="#"><h3>Deploying Hugo to Netlify</h3></a>
                     <ul class="post-meta list-inline">
                         <li class="list-inline-item">
-                            <i class="fa fa-user-circle-o"></i> <a href="#">John Doe</a>
+                            <i class="fa fa-user-circle-o"></i> <a href="#">Jack Epner</a>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fa fa-calendar-o"></i> <a href="#">25 June 2020</a>
+                            <i class="fa fa-calendar-o"></i> <a href="#">27 August 2022</a>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fa fa-tags"></i> <a href="#">Bootstrap4</a>
+                            <i class="fa fa-tags"></i> <a href="#">Hugo</a>
                         </li>
                     </ul>
                     <p>
-                        As I see this being a common error for people, and I had to go through this myself, I wanted to share my experience, as it appeared to be slightly more unique. 
-When trying to deploy a Hugo site to Netlify, a common error appears to be Netlify not finding your publish directory.  
-First, this can be configured in your netlify.toml file, or through the Deploy Settings dashboard on Netlify's site.  For Hugo users, it's common to use 'public.'  Be careful of other threads (and even this one, at some point), because this default may change over time.  Previous advice I saw mentioned a folder called 'build.'  It doesn't matter what you name it, so much, but Netlify currently (8/27/22) notes that 'public' would be the common destination based on a Hugo build (as it creates a folder called 'public' in creating the app locally).  
-Once I had this all set, I ran into an unexpected issue, and that prompted me to write this article.  It's a simple thing really, but as many have probably experienced, once you've already troubleshot through several issues, and your build is otherwise ready to deploy, a simple oversight can create unneeded frustration.  In my case, it was a matter of having an empty folder in my local git repository, but it not appearing in GitHub. 
-So I was receiving an error saying it could not find 'public.'  I looked in VS Code, and saw the folder.  I looked in my local repo, and saw the folder.  Then I went on to github.com and... no folder.  I had ignored it when pushing because it was empty.  
-Searching the inetnet for a solution, I came across a great article from a Java community that addressed the issue (https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/gitkeep-push-empty-folders-git-commit).  Its recommendation was to create an empty file in the folder called '.gitkeep' which would help git recognize the folder as being 'worthy' of pushing.  I did this, and voila, problem solved! 
+                        As I see this being a common error for people, and I had to go through this myself, I wanted to share my experience, as it appeared to be slightly more unique. <br><br>
+When trying to deploy a Hugo site to Netlify, a common error appears to be Netlify not finding your publish directory.  <br><br>
+First, this can be configured in your netlify.toml file, or through the Deploy Settings dashboard on Netlify's site.  For Hugo users, it's common to use 'public.'  Be careful of other threads (and even this one, at some point), because this default may change over time.  Previous advice I saw mentioned a folder called 'build.'  It doesn't matter what you name it, so much, but Netlify currently (8/27/22) notes that 'public' would be the common destination based on a Hugo build (as it creates a folder called 'public' in creating the app locally).  <br><br>
+Once I had this all set, I ran into an unexpected issue, and that prompted me to write this article.  It's a simple thing really, but as many have probably experienced, once you've already troubleshot through several issues, and your build is otherwise ready to deploy, a simple oversight can create unneeded frustration.  In my case, it was a matter of having an empty folder in my local git repository, but it not appearing in GitHub. <br><br>
+So I was receiving an error saying it could not find 'public.'  I looked in VS Code, and saw the folder.  I looked in my local repo, and saw the folder.  Then I went on to github.com and... no folder.  I had ignored it when pushing because it was empty.  <br><br>
+Searching the inetnet for a solution, I came across a great article from a Java community that addressed the issue (https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/gitkeep-push-empty-folders-git-commit).  Its recommendation was to create an empty file in the folder called '.gitkeep' which would help git recognize the folder as being 'worthy' of pushing.  I did this, and voila, problem solved!  <br><br>
 Now I just have to figure out why my directory structure is leading to a 404 error having finally deployed my site... more to come!
                     </p><br>
                     <a href="#" class="btn btn-outline-secondary btn-sm">Read More</a>
